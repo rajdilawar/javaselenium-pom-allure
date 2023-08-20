@@ -36,16 +36,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Clean up resources, if needed
-        }
-        success {
-            // Trigger any post-build actions on successful build
-        }
-        failure {
-            // Trigger any actions on build failure
-        }
-    }
 }
