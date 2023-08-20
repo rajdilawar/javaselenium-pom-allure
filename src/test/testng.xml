@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemoTestSuite" parallel="tests" thread-count="1">
+
+    <test name="LoginTests">
+        <classes>
+            <class name="com.rajdilawar.tests.LoginPageTest"/>
+        </classes>
+    </test>
+
+    <test name="ProductTests">
+        <classes>
+            <class name="com.rajdilawar.tests.productsTest"/>
+        </classes>
+    </test>
+
+</suite>

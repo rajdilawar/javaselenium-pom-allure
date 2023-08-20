@@ -1,0 +1,60 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+# Ignore TestNG report files
+allure-results/
+allure-report/
+test-output/
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# Ignore Maven specific files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Ignore logs and temp files
+*.log
+*.log.*
+*.tmp
+
+# Ignore any other build output and temporary files
+build/
+logs/
+out/
+temp/
+You can customize this .gitignore file according to your project structure and needs. Make sure to place the .gitignore file in the root directory of your Git repository, and Git will automatically ignore the files and directories listed in the .gitignore file when you commit changes.
+
+
+
+
+
