@@ -27,6 +27,7 @@ public class InitClass {
         if (browserName.equals("chrome")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-blink-features=AutomationControlled");
+          //  options.addArguments("--headless");
             driver = new ChromeDriver(options);
             System.out.println("Initializing Chrome driver");
         } else if (browserName.equals("firefox")) {

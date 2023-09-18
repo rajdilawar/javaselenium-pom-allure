@@ -35,8 +35,7 @@ public class LoginPageTest {
     @Test(priority = 2)
     @Description("Test to verify failed login with invalid credentials")
     @Severity(SeverityLevel.NORMAL)
-    public void loginWithInValidCredentials() throws InterruptedException {
-        Thread.sleep(2000);
+    public void loginWithInValidCredentials() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.invalidLogin();
     }
@@ -44,8 +43,7 @@ public class LoginPageTest {
     @Test(priority = 3)
     @Description("Test to verify failed login with blocked user")
     @Severity(SeverityLevel.NORMAL)
-    public void loginWithBlockedUser() throws InterruptedException {
-        Thread.sleep(2000);
+    public void loginWithBlockedUser() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.blockedUserLogin();
     }

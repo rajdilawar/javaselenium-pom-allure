@@ -30,7 +30,7 @@ public class productsTest {
     @Test(priority = 1)
     @Description("Test to Buy cheapest product")
     @Severity(SeverityLevel.NORMAL)
-    public void buyCheapestArticle() throws InterruptedException {
+    public void buyCheapestArticle() {
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.assertPageTitle();
         double lowestValue = inventoryPage.addToCartLowestValueArticles();
@@ -45,17 +45,18 @@ public class productsTest {
         CheckoutStepTwoPage checkoutStepTwoPage = new CheckoutStepTwoPage(driver);
         checkoutStepTwoPage.assertPageTitle();
         checkoutStepTwoPage.finishCheckoutProcess();
-        Thread.sleep(5000);
+        CheckoutCompletePage checkoutCompletePage = new CheckoutCompletePage(driver);
+        checkoutCompletePage.assertPageTitle();
+        checkoutCompletePage.assertCheckoutCompletion();
     }
 
     @Test(priority = 2)
     @Description("Test to filter product in ascending order")
     @Severity(SeverityLevel.NORMAL)
-    public void filterProducts() throws InterruptedException {
+    public void filterProducts() {
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.assertPageTitle();
         inventoryPage.checkPrizeValueInAscendingOrder();
-        Thread.sleep(5000);
     }
 
     @AfterMethod
